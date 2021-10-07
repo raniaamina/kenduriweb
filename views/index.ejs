@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: Montserrat, sans-serif;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>KenduriApps</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="public/assets/css/styles.css">
+</head>
+
+<body>
+    <section style="min-height: 100vh;">
+        <div class="container d-flex justify-content-center">
+            <div class="mt-3" style="min-width: 80%;">
+                <h3 class="text-center m-0" style="color: var(--bs-primary);font-family: Montserrat, sans-serif;"><strong>Kenduri Apps</strong></h3>
+                <p class="text-center" style="font-family: Montserrat, sans-serif;">by Ayra Print &amp; Shop</p>
+                <form enctype="multipart/form-data" action="/submit-form" method="POST">
+                    <div class="my-2"><label class="form-label" for="nama" style="font-family: Montserrat, sans-serif;">Nama</label><input class="form-control" type="text" name="nama" placeholder="Mis. Bapak Fulan" style="font-family: Montserrat, sans-serif;"></div>
+                    <div class="my-2"><label class="form-label" for="alamat" style="font-family: Montserrat, sans-serif;">Alamat</label><input class="form-control" type="text" value="Ds. Wotsogo Kecamatan Jatirogo" name="alamat" style="font-family: Montserrat, sans-serif;"></div>
+                    <div class="my-2"><label class="form-label" for="kegiatan" style="font-family: Montserrat, sans-serif;">Kegiatan</label><input class="form-control" type="text" name="kegiatan" placeholder="Mis. Kirim Do'a" style="font-family: Montserrat, sans-serif;"></div>
+                    <div class="my-2"><label class="form-label" for="acara" style="font-family: Montserrat, sans-serif;">Acara</label><input class="form-control" type="text" name="acara" placeholder="Mis. 100 Hari Wafatnya Fulanah (almh)" style="font-family: Montserrat, sans-serif;"></div>
+                    <div class="my-2"><label class="form-label" for="hari" style="font-family: Montserrat, sans-serif;">Hari</label><input class="form-control" type="text" name="hari" placeholder="Mis. Ahad Legi" style="font-family: Montserrat, sans-serif;"></div>
+                    <div class="my-2"><label class="form-label" style="font-family: Montserrat, sans-serif;">Tanggal</label><input class="form-control" type="text" name="tanggal" placeholder="Mis. 12 April 2021" style="font-family: Montserrat, sans-serif;"></div>
+                    <div class="my-2"><label class="form-label" style="font-family: Montserrat, sans-serif;">Pukul</label><input class="form-control" type="time" name="pukul" value="18:00" style="font-family: Montserrat, sans-serif;"></div>
+                    <div class="my-2"><label class="form-label" style="font-family: Montserrat, sans-serif;">Keterangan</label><input class="form-control" type="text" name="keterangan" value="Ba'da Maghrib" style="font-family: Montserrat, sans-serif;"></div>
+                    <div class="my-2"><label class="form-label" style="font-family: Montserrat, sans-serif;">Tempat</label><input class="form-control" type="text" name="tempat" placeholder="Mis. Rumah Bapak Fulan" style="font-family: Montserrat, sans-serif;"></div>
+                    <div class="my-2 mt-3 d-flex align-items-center justify-content-between">
+                        <button class="btn btn-danger form-control" type="reset" name="submit" style="width: 23%;">Reset Data</button>
+                        <button class="btn btn-success form-control" type="submit" name="submit" style="width: 75%;">Buat Undangan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

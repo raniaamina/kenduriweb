@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: Montserrat, sans-serif;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>KenduriApps</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="public/assets/css/styles.css">
+    <style>
+        @media print {
+            @page {
+                size: 210mm 330mm;
+                margin: 0;
+            }
+            html, body {
+                width: 210mm;
+                height: 330mm;
+                margin-right: auto !important;
+                margin-left: auto !important;
+            }
+            .printBtn {
+                display: none;
+            }
+            .maincontainer {
+                margin-top: 2cm !important;
+            }
+
+            div#mainpage {
+                margin-right: auto !important;
+                margin-left: auto !important;
+                /* margin-top: 1cm; */
+            }
+
+            .paragraf {
+                margin-right: auto !important;
+                margin-left: auto !important;
+            }
+
+            div#buttonarea {
+                display: none !important;
+            }
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <section>
+        <div class="container maincontainer" style="width: 21cm;">
+            <div class="text-start printBtn my-3 d-flex justify-content-between" id="buttonarea" >
+                <a class="btn btn-primary bg-transparent text-dark border-1 border-dark" role="button" href="/">Kembali</a>
+                <button class="btn btn-primary" onclick="window.print();">Cetak Undangan</button>
+            </div>
+        </div>
+        <div class="container" id="mainpage" style="width: 21cm;height: 33cm;">
+            <div class="konten" style="margin-top: -50px; height: 110mm;background: url(&quot;public/assets/img/frame-atas.svg&quot;) center / contain no-repeat;">
+                <div>
+                    <div class="row" style="margin-top: 32px;">
+                        <div class="col" style="padding-top: 90px;padding-left: 65px;">
+                            <div>
+                                <h3 class="m-0" style="font-family: Montserrat, sans-serif;font-size: 28px;font-weight: bold;"><%= data.nama %>     </h3>
+                                <p style="font-family: Montserrat, sans-serif;border-top-width: 2.5px; border-top-style: solid;"><%= data.alamat %></p>
+                            </div>
+                        </div>
+                        <div class="col text-end" style="padding-top: 90px;padding-right: 71px;">
+                            <div></div>
+                            <p style="font-family: Montserrat, sans-serif;"><strong><%= data.tanggal %></strong><br></p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 32px;">
+                        <div class="col" style="padding-left: 65px;padding-top: 30px;">
+                            <div>
+                                <h3 class="mb-0" style="font-family: 'Alfa Slab One', serif;font-size: 40px;text-decoration:  underline;">UNDANGAN</h3>
+                                <p class="m-0" style="font-family: Montserrat, sans-serif;"><%= data.acara %></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <p style="font-family: Montserrat, sans-serif;text-decoration: underline;font-size: 17px;line-height: 9.5px;"><strong>Kepada yth. Bapak/Saudara</strong></p>
+                                <div style="width: 250px;border-bottom-width: 2px;border-bottom-style: solid;margin-top: 35px;margin-bottom: 20px;margin-top: 30px;margin-bottom: 20px;"></div>
+                                <div class="d-flex align-items-center">
+                                    <p style="font-family: Montserrat, sans-serif;">di&nbsp;</p>
+                                    <p style="font-family: Montserrat, sans-serif;font-size: 18px;">
+                                        <strong>Tempat</strong></p>
+                                </div>
+                                <div style="width: 230px;border-top-style: solid;border-top-width: 2px !important;margin-top: -15px;margin-left: 20px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kop-depan" style="height: 220mm;background: url(&quot;public/assets/img/frame-bawah.svg&quot;) center / contain no-repeat;">
+                <h3 class="text-center" style="padding-top: 130px;font-family: Montserrat, sans-serif;">Assalamualaikum Wr Wb</h3>
+                <div class="mx-auto paragraf" style="padding-top: 38px;width: 16cm;font-size: 18px;">
+                    <p>Dengan rahmat dan rido Allah SWT, dalam kesempatan ini kami sekeluarga mengundang Bapak / Saudara untuk berkenan hadir dalam <%= data.kegiatan %> <%= data.acara %> yang InsyaAllah akan dilaksanakan pada:</p>
+                    <div class="row my-0" style="padding-top: 12px;padding-left: 29px;">
+                        <div class="col-2 d-flex align-items-center" id="m-0">
+                            <p class="m-0">Hari</p>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <p class="m-0"><%= data.hari %></p>
+                        </div>
+                    </div>
+                    <div class="row my-0" style="padding-left: 29px;padding-top: 12px;">
+                        <div class="col-2 d-flex align-items-center" id="m-1">
+                            <p class="m-0">Tanggal</p>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <p class="m-0"><%= data.tanggal %></p>
+                        </div>
+                    </div>
+                    <div class="row my-0" style="padding-left: 29px;padding-top: 12px;">
+                        <div class="col-2 d-flex align-items-center" id="m-3">
+                            <p class="m-0">Jam</p>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <p class="m-0"><%= data.pukul %></p>
+                        </div>
+                    </div>
+                    <div class="row my-0" style="padding-left: 29px;padding-top: 12px;">
+                        <div class="col-2 d-flex align-items-center" id="m-2">
+                            <p class="m-0">Tempat</p>
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <p class="m-0"><%= data.tempat %></p>
+                        </div>
+                    </div>
+                    <p style="padding-top: 35px;">Suatu kehormatan bagi kami jika Bapak/Saudara berkenan hadir pada acara tersebut. Sebelum dan sesudahnya kami ucapkan terima kasih.</p>
+                    <p class="text-center mb-0" style="padding-top: 31px;">Hormat Kami</p>
+                </div>
+                <h5 class="text-center" style="font-family: Montserrat, sans-serif;"><strong><%= data.nama %> Sekeluarga</strong></h5>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
