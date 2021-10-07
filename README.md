@@ -10,6 +10,6 @@
 (production): npm run start
 (development): npm run dev
 
-Buka: http://localhost:8021/
+Buka: http://localhost:2400/
 
 Upload file disimpan di public/uploads

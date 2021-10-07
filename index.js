@@ -4,7 +4,7 @@ const path = require('path');
 const cors = require('cors');
 const formidable = require('formidable');
 
-const PORT = 8888;
+const PORT = 2400;
 const UPLOAD_DIR = path.join(__dirname, 'public/uploads');
 const app = express();
 
